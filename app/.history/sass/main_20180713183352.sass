@@ -386,18 +386,23 @@ img
 .swiper-pagination-bullet-active
     background: #fff
 
-.banners-block
-    display: flex
-    justify-content: space-between
-    margin-bottom: 40px
-
 .banners-block__item
-    width: 32%
     position: relative
     height: 240px
     display: flex
     align-items: center
     justify-content: center
+
+.banners-block__item-link
+    &:after
+        position: absolute
+        content: ""
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+        background: #fff
+        opacity: .7
     &:nth-child(1)
         background: url(/img/1.png) no-repeat
         background-size: cover
@@ -407,22 +412,4 @@ img
     &:nth-child(3)
         background: url(/img/3.png) no-repeat
         background-size: cover
-
-.banners-block__item-link
-    z-index: 1
-    color: black
-    font-family: Open-Sans-Bold
-    font-size: 24px
-    display: block
-    height: 100%
-    display: flex
-    align-items: center
-    width: 100%
-    justify-content: center
-    background: rgba(255,255,255,0.5)
-    transition: all .5s
-    &:hover
-       background: rgba(255,255,255,0)
-       transition: all .5s
-
 

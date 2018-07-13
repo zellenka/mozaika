@@ -388,11 +388,9 @@ img
 
 .banners-block
     display: flex
-    justify-content: space-between
-    margin-bottom: 40px
+    justify-content: space-around
 
 .banners-block__item
-    width: 32%
     position: relative
     height: 240px
     display: flex
@@ -410,19 +408,15 @@ img
 
 .banners-block__item-link
     z-index: 1
-    color: black
-    font-family: Open-Sans-Bold
-    font-size: 24px
-    display: block
-    height: 100%
-    display: flex
-    align-items: center
-    width: 100%
-    justify-content: center
-    background: rgba(255,255,255,0.5)
-    transition: all .5s
-    &:hover
-       background: rgba(255,255,255,0)
-       transition: all .5s
+    &:after
+        position: absolute
+        content: ""
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+        background: #fff
+        opacity: .7
+        z-index: 0
 
 

@@ -1,6 +1,7 @@
 $( document ).ready(function() {
 	var mySwiper = new Swiper ('.swiper-container', {
 		// Optional parameters
+		direction: 'vertical',
 		loop: true,
 	
 		// If we need pagination
@@ -12,7 +13,8 @@ $( document ).ready(function() {
 		navigation: {
 		  nextEl: '.swiper-button-next',
 		  prevEl: '.swiper-button-prev',
-		},
+		}
+
 	  })
 	
 
