@@ -1,0 +1,151 @@
+@font-face
+  font-family: 'Raleway-ExtraBold'
+  src: url('/fonts/11843.woff')
+
+@font-face
+  font-family: 'Raleway-Regular'
+  src: url('/fonts/11851.woff')
+
+@font-face
+  font-family: 'Open-Sans-Bold'
+  src: url('/fonts/2204.ttf')
+
+@font-face
+  font-family: 'Open-Sans-Semibold'
+  src: url('/fonts/2212.ttf')
+
+@font-face
+  font-family: 'Open-Sans'
+  src: url('/fonts/2211.ttf')
+
+$main: #d74b4b
+
+body
+    font-family: Open-Sans
+
+ul
+    list-style: none
+
+.header__top
+    width: 100%
+    background: #dcddd8
+    height: 45px
+
+.header__top-nav, .header__top-enter-menu
+    display: flex
+    width: 100%
+    height: 45px
+    align-items: center
+    padding: 0
+    margin: 0
+    line-height: 1
+
+.header__top-nav-item
+    margin-right: 30px
+    a
+        color: black
+
+.header__middle-logo
+    display: flex
+    align-items: center
+    &:hover
+        text-decoration: none
+
+.header__middle-logo-img
+    width: 57px
+    height: 57px
+    margin-right: 17px
+
+.header__middle-logo-text
+    font-family: Raleway-ExtraBold, sans-serif
+    font-size: 26px
+    color: $main
+    line-height: 1
+    margin: 0
+
+.header__middle-logo-slogan
+    line-height: 1
+    font-family: Raleway-Regular, sans-serif
+    font-size: 14px
+    color: #444444
+    margin: 0
+
+.header__middle-search_block
+    display: flex
+    width: 100%
+    justify-content: space-around
+
+.header__middle-search-phone
+    font-family: Open-Sans-Bold
+    font-size: 31px
+    &:hover
+
+.header__middle-search-block
+    line-height: 1
+
+.header__middle-search-time
+    color: #9d9d9d
+    font-size: 12px
+    font-family: Open-Sans
+
+.header__middle-search-modal
+    font-family: Open-Sans-Semibold
+    color: black
+    font-size: 12px
+    border-bottom: 1px dashed black
+    &:hover
+        cursor: pointer
+
+.header__middle-search_block-input
+    width: 85%
+    border-radius: 5px
+    border: 1px solid #c9c9c9
+    max-width: 380px
+    height: 45px
+    padding-left: 18px
+    &::placeholder
+        color: #c9c9c9
+
+.header__middle-search_block-button
+    width: 45px
+    height: 45px
+    text-align: center
+    line-height: 45px
+    border-radius: 5px
+    background: #c9c9c9
+    border: none
+    padding: 0
+    margin: 0
+
+.header__middle-basket-top
+    display: flex
+    width: 100%
+    align-items: center
+
+.header__middle-basket-info
+    line-height: 1
+    font-family: Open-Sans
+    p
+        margin: 0
+
+.header__middle-basket-info_bold
+    font-family: Open-Sans-Bold
+        
+.header__middle-basket-bottom
+    display: flex
+    justify-content: space-around
+
+.header__middle-basket-bottom-button
+    font-size: 12px
+
+.header___red-button
+    color: #fff
+    background: rgb(215, 75, 75)
+    border-radius: 5px
+    height: 34px
+    display: flex
+    text-align: center
+    align-items: center
+    line-height: 1
+    padding: 0 10px
+
