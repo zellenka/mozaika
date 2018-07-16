@@ -363,19 +363,19 @@ img
 .swiper-button-prev, .swiper-button-next
     width: 44px
     height: 44px
-
+    &::after
+        content: ""
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+        background: red
 
 .swiper-button-prev
-    background: url(/img/left.png) no-repeat,rgba(255, 255, 255, 0.4)
-    width: 46px
-    height: 46px
-    background-position: center
+    background-image: url(/img/left.png) !important
 
 .swiper-button-next
-    background: url(/img/right.png) no-repeat, rgba(255, 255, 255, 0.4)
-    width: 46px
-    height: 46px
-    background-position: center
+    background-image: url(/img/right.png) !important
 
 .swiper-pagination-bullet
     height: 6px

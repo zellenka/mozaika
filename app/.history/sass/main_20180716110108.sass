@@ -363,19 +363,19 @@ img
 .swiper-button-prev, .swiper-button-next
     width: 44px
     height: 44px
-
+    &::after
+        content: ""
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+        background: red
 
 .swiper-button-prev
-    background: url(/img/left.png) no-repeat,rgba(255, 255, 255, 0.4)
-    width: 46px
-    height: 46px
-    background-position: center
+    background-image: url(/img/left.png) !important
 
 .swiper-button-next
-    background: url(/img/right.png) no-repeat, rgba(255, 255, 255, 0.4)
-    width: 46px
-    height: 46px
-    background-position: center
+    background-image: url(/img/right.png) !important
 
 .swiper-pagination-bullet
     height: 6px
@@ -425,11 +425,6 @@ img
        background: rgba(255,255,255,0)
        transition: all .5s
 
-.features
-    background: #f5f5f5
-    width: 100%
-    padding: 45px 0
-    margin-top: 20px  
 
 .features__img-block
     width: 130px
@@ -452,20 +447,9 @@ img
 
 .features__text
     text-align: center
-    
 
 .products__item
     border: 1px solid #e6e6e6
-    position: relative
-    margin-bottom: 30px
-    overflow: hidden
-    &:hover
-        overflow: visible
-        box-shadow: 0px 1px 6.86px 0.14px rgba(0, 0, 0, 0.16), 0px 3px 4.7px 0.3px rgba(0, 0, 0, 0.24)
-    &:hover .products__hidden
-        height: auto
-        transition: all .5s
-        box-shadow: 0px 3px 6.86px 0.14px rgba(0, 0, 0, 0.16), 0px 3px 4.7px 0.3px rgba(0, 0, 0, 0.24)
 
 .products__img-block
     display: block
@@ -481,100 +465,7 @@ img
     padding: 15px
 
 .products__name
-    display: block
     font-size: 14px
     font-family: Open-Sans-Semibold
     color: rgba(68, 68, 68, 255)
-    margin-bottom: 8px
 
-.products__availability-block
-    margin: 5px 0 0 0
-
-.products__availability
-    font-family: Open-Sans
-    font-size: 14px
-    color: #0b9053
-
-.products__ppice-block
-    background: #e6e6e6
-    display: flex
-    justify-content: space-between
-    align-items: center
-    padding: 15px
-
-.products__price
-    font-size: 18px
-    font-family: Open-Sans-Bold
-    line-height: 1 
-    margin-bottom: 5px
-
-.products__value
-    font-size: 13px
-    font-family: Open-Sans
-    line-height: 1
-    margin: 0
-
-.products__add-button
-    border: none
-    color: #fff
-    width: 136px
-    height: 40px
-
-.products__hidden
-    padding: 15px
-    position: absolute
-    left: -1px
-    right: -1px
-    background: #fff
-    z-index: 1
-    border: 1px solid #e6e6e6
-    height: 0
-    transition: all .5s
-
-
-.products__hidden-item
-    display: flex
-    justify-content: space-between
-    border-bottom: 1px dashed #e6e6e6
-    padding: 5px 0
-    &:last-child
-        border: none
-        padding-bottom: 0
-
-.products__hidden-value
-    font-size: 13px
-    color: rgba(68, 68, 68, 255)
-    font-family: Open-Sans-Semibold
-
-.products__hidden-key
-    font-size: 13px
-    color: #888888
-
-.products-filter
-    display: flex
-    justify-content: center
-    align-items: center
-    margin-bottom: 30px
-
-.products-filter__button
-    border-radius: 5px
-    border: 1px solid black
-    background: #fff
-    width: 200px
-    height: 44px
-    display: flex
-    justify-content: center
-    align-items: center
-    color: black
-    margin: 0 8px
-    font-size: 16px
-    &:hover
-        background: $main
-        color: #fff
-        border: 1px solid $main
-        text-decoration: none
-
-.products-filter__button_active
-    background: $main
-    color: #fff
-    border: 1px solid $main
