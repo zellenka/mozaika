@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mozaika</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	    crossorigin="anonymous">
+	<link rel="stylesheet" href="/libs/normalize.css">
+	<link rel="stylesheet" href="/css/libs.min.css">
+	<link rel="stylesheet" href="/css/swiper.min.css">
+	<link rel="stylesheet" href="/css/main.css">
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<ul class="header__top-nav">
+							<li class="header__top-nav-item">
+								<a href="/">Оплата і доставка</a>
+							</li>
+							<li class="header__top-nav-item">
+								<a href="/">Гарантії</a>
+							</li>
+							<li class="header__top-nav-item">
+								<a href="/">Партнерам</a>
+							</li>
+							<li class="header__top-nav-item">
+								<a href="/">Блог</a>
+							</li>
+							<li class="header__top-nav-item">
+								<a href="/">Про нас</a>
+							</li>
+							<li class="header__top-nav-item">
+								<a href="/">Контакти</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="header__top-enter-menu">
+							<li>РУС</li>
+							<li>UAH</li>
+							<li>
+								<a href="/">Вхід / Реєстрація</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__middle">
+			<div class="container">
+				<div class="row header__middle-row">
+					<a href="" class="col-md-3 header__middle-logo">
+						<img src="/img/logo.png" alt="" class="header__middle-logo-img">
+						<div>
+							<p class="header__middle-logo-text">Кафельтон</p>
+							<p class="header__middle-logo-slogan">мозаїка з будь чого...</p>
+						</div>
+					</a>
+					<div class="col-md-6 header__middle-search">
+						<div class="header__middle-search_block">
+							<a href="tel:+380980677999" class="header__middle-search-phone">+38 (098) 06 77 999</a>
+							<div class="header__middle-search-block">
+								<p class="header__middle-search-time">Щодня з 10:00 до 21:00</p>
+								<p class="header__middle-search-modal">Зателефонуйте мені</p>
+							</div>
+						</div>
+						<div class="header__middle-search_block">
+							<input type="text" class="header__middle-search_block-input" placeholder="Щось шукаєте?">
+							<button type="button" class="header__middle-search_block-button">
+								<img src="/img/icon.png" alt="">
+							</button>
+						</div>
+
+					</div>
+					<div class="col-md-3 header__middle-basket">
+						<div class="header__middle-basket-top">
+							<img src="/img/cart.png" alt="">
+							<div class="header__middle-basket-info">
+								<p>Товарів:
+									<span class="header__middle-basket-info_bold">2</span>
+									<span class="header__middle-basket-info_bold">шт.</span>
+								</p>
+								<p>На суму:
+									<span class="header__middle-basket-info_bold">1 358</span>
+									<span class="header__middle-basket-info_bold">грн.</span>
+								</p>
+							</div>
+						</div>
+						<div class="header__middle-basket-bottom">
+							<a class="header__middle-basket-bottom-button header___red-button">Перейти в кошик</a>
+							<a class="header__middle-basket-bottom-button header___red-button">Купити в 1 клік</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="menu-block">
+							<li class="menu-block__item">
+								<a href="">СКЛЯНнА МОЗАЇКА</a>
+							</li>
+							<li class="menu-block__item">
+								<a href="">МОЗАЇКА з каменю</a>
+							</li>
+							<li class="menu-block__item">
+								<a href="">зеркальна МОЗАЇКА </a>
+							</li>
+							<li class="menu-block__item">
+								<a href="">металева МОЗАЇКА</a>
+							</li>
+							<li class="menu-block__item">
+								<a href="">СУПУТНІ ТОВАРИ</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="breadcrumbs-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<ul class="breadcrumbs-block__list">
+							<li class="breadcrumbs-block__item breadcrumbs-block__item_not-active">
+								<a href="">Головна</a>
+							</li>
+							<li class="breadcrumbs-block__item breadcrumbs-block__item_active">
+								<a href="">Каталог</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="main container">
+		<div class="row">
+			<div class="col-md-3 sidebar">
+				<div class="wide-search">
+					<p class="wide-search__heading">РОЗШИРЕНИЙ ПОШУК</p>
+					<div>
+						<p>Ціна (грн.)</p>
+					</div>
+					<p>Виробник</p>
+					<div class="wide-search__producer">
+						<label class="chekbox-lable">Mosavit
+							<input type="checkbox" value="Mosavit">
+							<span class="chekmark">
+							</span>
+						</label>
+						<label class="chekbox-lable">Veneto ceramicas
+							<input type="checkbox" value="Veneto ceramicas">
+							<span class="chekmark">
+							</span>
+						</label>
+						<label class="chekbox-lable">Vidrepur
+							<input type="checkbox" value="Vidrepur">
+							<span class="chekmark">
+							</span>
+						</label>
+					</div>
+					<p>Виробник</p>
+					<div class="wide-search__producer">
+						<label class="chekbox-lable">Бетон
+							<input type="checkbox" value="Бетон">
+							<span class="chekmark">
+							</span>
+						</label>
+						<label class="chekbox-lable">Дерево
+							<input type="checkbox" value="Дерево">
+							<span class="chekmark">
+							</span>
+						</label>
+						<label class="chekbox-lable">Камінь
+							<input type="checkbox" value="Камінь">
+							<span class="chekmark">
+							</span>
+						</label>
+						<label class="chekbox-lable">Котто
+							<input type="checkbox" value="Котто">
+							<span class="chekmark">
+							</span>
+						</label>
+						<label class="chekbox-lable">Мармур
+							<input type="checkbox" value="Мармур">
+							<span class="chekmark">
+							</span>
+						</label>
+					</div>
+					<p>Колір</p>
+					<div class="wide-search__producer-wraper">
+						<div class="wide-search__producer">
+							<label class="chekbox-lable">Бежевий
+								<input type="checkbox" value="Бежевий">
+								<span class="chekmark">
+								</span>
+							</label>
+							<label class="chekbox-lable">Бежевий темний
+								<input type="checkbox" value="Бежевий темний">
+								<span class="chekmark">
+								</span>
+							</label>
+							<label class="chekbox-lable">Білий
+								<input type="checkbox" value="Білий">
+								<span class="chekmark">
+								</span>
+							</label>
+							<label class="chekbox-lable">Жовтий і золотий
+								<input type="checkbox" value="Жовтий і золотий">
+								<span class="chekmark">
+								</span>
+							</label>
+							<label class="chekbox-lable">Зелений
+								<input type="checkbox" value="Зелений">
+								<span class="chekmark">
+								</span>
+							</label>
+							<label class="chekbox-lable">Бежевий
+								<input type="checkbox" value="Бежевий">
+								<span class="chekmark">
+								</span>
+							</label>
+							<label class="chekbox-lable">Бежевий темний
+								<input type="checkbox" value="Бежевий темний">
+								<span class="chekmark">
+								</span>
+							</label>
+							<label class="chekbox-lable">Білий
+								<input type="checkbox" value="Білий">
+								<span class="chekmark">
+								</span>
+							</label>
+							<label class="chekbox-lable">Жовтий і золотий
+								<input type="checkbox" value="Жовтий і золотий">
+								<span class="chekmark">
+								</span>
+							</label>
+							<label class="chekbox-lable">Зелений
+								<input type="checkbox" value="Зелений">
+								<span class="chekmark">
+								</span>
+							</label>
+						</div>
+					</div>
+
+
+				</div>
+
+				<div class="top-sellers">
+					<p class="top-sellers__heading">топ продажів</p>
+					<ul class="top-sellers__list">
+						<li class="top-sellers__item">
+							<img src="/img/sproduct.png" alt="" class="top-sellers__img">
+							<div class="top-sellers__block">
+								<a href="" class="top-sellers__name">Мозаїка 31,6*31,6 Br-9001-A Negro</a>
+								<div class="top-sellers__price-block">
+									<p class="top-sellers__price">
+										<span>327,00</span> грн.</p>
+									<a href="#" class="top-sellers__button">Купити</a>
+								</div>
+							</div>
+						</li>
+						<li class="top-sellers__item">
+							<img src="/img/sproduct.png" alt="" class="top-sellers__img">
+							<div class="top-sellers__block">
+								<a href="" class="top-sellers__name">Мозаїка 31,6*31,6 Br-9001-A Negro</a>
+								<div class="top-sellers__price-block">
+									<p class="top-sellers__price">
+										<span>327,00</span> грн.</p>
+									<a href="#" class="top-sellers__button">Купити</a>
+								</div>
+							</div>
+						</li>
+						<li class="top-sellers__item">
+							<img src="/img/sproduct.png" alt="" class="top-sellers__img">
+							<div class="top-sellers__block">
+								<a href="" class="top-sellers__name">Мозаїка 31,6*31,6 Br-9001-A Negro</a>
+								<div class="top-sellers__price-block">
+									<p class="top-sellers__price">
+										<span>327,00</span> грн.</p>
+									<a href="#" class="top-sellers__button">Купити</a>
+								</div>
+							</div>
+						</li>
+						<li class="top-sellers__item">
+							<img src="/img/sproduct.png" alt="" class="top-sellers__img">
+							<div class="top-sellers__block">
+								<a href="" class="top-sellers__name">Мозаїка 31,6*31,6 Br-9001-A Negro</a>
+								<div class="top-sellers__price-block">
+									<p class="top-sellers__price">
+										<span>327,00</span> грн.</p>
+									<a href="#" class="top-sellers__button">Купити</a>
+								</div>
+							</div>
+						</li>
+						<li class="top-sellers__item">
+							<img src="/img/sproduct.png" alt="" class="top-sellers__img">
+							<div class="top-sellers__block">
+								<a href="" class="top-sellers__name">Мозаїка 31,6*31,6 Br-9001-A Negro</a>
+								<div class="top-sellers__price-block">
+									<p class="top-sellers__price">
+										<span>327,00</span> грн.</p>
+									<a href="#" class="top-sellers__button">Купити</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+
+				<div class="sidebar__banner">
+					<a href="#" class="sidebar__banner-block">
+						<img src="/img/1.png" alt="" class="sidebar__banner-img">
+						<p>Рекламний
+							<br> банер</p>
+					</a>
+				</div>
+
+			</div>
+			<div class="col-md-9">
+				<h1>ЗЕРКАЛЬНА МОЗАЇКА</h1>
+				<div class="category-description">
+					<img src="/img/cat.png" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet
+						lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+						parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci,
+						sed rhoncus sapien nunc eget.
+					</p>
+					<p>Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+						Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+
+				</div>
+				<!-- products -->
+				<div class="container-fluid">
+					<div class="row products-sort">
+						<div class="products-sort-block col-md-5">
+							<label class="products-sort__label" for="input-sort">Сортувати за:</label>
+							<select class="form-control products-sort__select" onchange="location = this.value;">
+								<option value="#" selected="selected">Назвою (А-Я)</option>
+								<option value="#">Назвою (А-Я)</option>
+								<option value="#">Назвою (Я-А)</option>
+								<option value="#">Price (Low &gt; High)</option>
+								<option value="#">Price (High &gt; Low)</option>
+								<option value="#">Rating (Highest)</option>
+								<option value="#">Rating (Lowest)</option>
+								<option value="#">Model (A - Z)</option>
+								<option value="#">Model (Z - A)</option>
+							</select>
+						</div>
+
+
+						<div class="products-sort-block col-md-5">
+							<label class="products-sort__label" for="input-sort">Показати:</label>
+							<select class="form-control products-sort__select products-sort__select-pages" onchange="location = this.value;">
+								<option value="#" selected="selected">12</option>
+								<option value="#">24</option>
+								<option value="#">32</option>
+
+							</select>
+						</div>
+
+					</div>
+					<div class="row products">
+						<div class="col-md-4">
+							<div class="products__item">
+								<a href="#" class="products__img-block">
+									<img src="/img/product.png" alt="">
+								</a>
+								<div class="products__availability-block">
+									<a href="#" class="products__name">Мозаїка 31,5*31,5 Color Antislip Blanco 100A</a>
+									<p>
+										<span class="products__availability">Є в наявності</span>
+									</p>
+								</div>
+								<div class="products__ppice-block">
+									<div>
+										<p class="products__price">267,00</p>
+										<p class="products__value">грн. / шт.</p>
+									</div>
+									<button class="products__add-button header___red-button" type="button">Додати в кошик</button>
+								</div>
+								<div class="products__hidden">
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Країна вирообник</span>
+										<span class="products__hidden-value">Іспанія</span>
+									</div>
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Стиль</span>
+										<span class="products__hidden-value">Ар-деко</span>
+									</div>
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Тип поверхні</span>
+										<span class="products__hidden-value">Глянцева</span>
+									</div>
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Бренд</span>
+										<span class="products__hidden-value">Vidrepur</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="products__item">
+								<a href="#" class="products__img-block">
+									<img src="/img/product.png" alt="">
+								</a>
+								<div class="products__availability-block">
+									<a href="#" class="products__name">Мозаїка 31,5*31,5 Color Antislip Blanco 100A</a>
+									<p>
+										<span class="products__availability">Є в наявності</span>
+									</p>
+								</div>
+								<div class="products__ppice-block">
+									<div>
+										<p class="products__price">267,00</p>
+										<p class="products__value">грн. / шт.</p>
+									</div>
+									<button class="products__add-button header___red-button" type="button">Додати в кошик</button>
+								</div>
+								<div class="products__hidden">
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Країна вирообник</span>
+										<span class="products__hidden-value">Іспанія</span>
+									</div>
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Стиль</span>
+										<span class="products__hidden-value">Ар-деко</span>
+									</div>
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Тип поверхні</span>
+										<span class="products__hidden-value">Глянцева</span>
+									</div>
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Бренд</span>
+										<span class="products__hidden-value">Vidrepur</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="products__item">
+								<a href="#" class="products__img-block">
+									<img src="/img/product.png" alt="">
+								</a>
+								<div class="products__availability-block">
+									<a href="#" class="products__name">Мозаїка 31,5*31,5 Color Antislip Blanco 100A</a>
+									<p>
+										<span class="products__availability">Є в наявності</span>
+									</p>
+								</div>
+								<div class="products__ppice-block">
+									<div>
+										<p class="products__price">267,00</p>
+										<p class="products__value">грн. / шт.</p>
+									</div>
+									<button class="products__add-button header___red-button" type="button">Додати в кошик</button>
+								</div>
+								<div class="products__hidden">
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Країна вирообник</span>
+										<span class="products__hidden-value">Іспанія</span>
+									</div>
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Стиль</span>
+										<span class="products__hidden-value">Ар-деко</span>
+									</div>
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Тип поверхні</span>
+										<span class="products__hidden-value">Глянцева</span>
+									</div>
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Бренд</span>
+										<span class="products__hidden-value">Vidrepur</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="products__item">
+								<a href="#" class="products__img-block">
+									<img src="/img/product.png" alt="">
+								</a>
+								<div class="products__availability-block">
+									<a href="#" class="products__name">Мозаїка 31,5*31,5 Color Antislip Blanco 100A</a>
+									<p>
+										<span class="products__availability">Є в наявності</span>
+									</p>
+								</div>
+								<div class="products__ppice-block">
+									<div>
+										<p class="products__price">267,00</p>
+										<p class="products__value">грн. / шт.</p>
+									</div>
+									<button class="products__add-button header___red-button" type="button">Додати в кошик</button>
+								</div>
+								<div class="products__hidden">
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Країна вирообник</span>
+										<span class="products__hidden-value">Іспанія</span>
+									</div>
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Стиль</span>
+										<span class="products__hidden-value">Ар-деко</span>
+									</div>
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Тип поверхні</span>
+										<span class="products__hidden-value">Глянцева</span>
+									</div>
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Бренд</span>
+										<span class="products__hidden-value">Vidrepur</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="products__item">
+								<a href="#" class="products__img-block">
+									<img src="/img/product.png" alt="">
+								</a>
+								<div class="products__availability-block">
+									<a href="#" class="products__name">Мозаїка 31,5*31,5 Color Antislip Blanco 100A</a>
+									<p>
+										<span class="products__availability">Є в наявності</span>
+									</p>
+								</div>
+								<div class="products__ppice-block">
+									<div>
+										<p class="products__price">267,00</p>
+										<p class="products__value">грн. / шт.</p>
+									</div>
+									<button class="products__add-button header___red-button" type="button">Додати в кошик</button>
+								</div>
+								<div class="products__hidden">
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Країна вирообник</span>
+										<span class="products__hidden-value">Іспанія</span>
+									</div>
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Стиль</span>
+										<span class="products__hidden-value">Ар-деко</span>
+									</div>
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Тип поверхні</span>
+										<span class="products__hidden-value">Глянцева</span>
+									</div>
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Бренд</span>
+										<span class="products__hidden-value">Vidrepur</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="products__item">
+								<a href="#" class="products__img-block">
+									<img src="/img/product.png" alt="">
+								</a>
+								<div class="products__availability-block">
+									<a href="#" class="products__name">Мозаїка 31,5*31,5 Color Antislip Blanco 100A</a>
+									<p>
+										<span class="products__availability">Є в наявності</span>
+									</p>
+								</div>
+								<div class="products__ppice-block">
+									<div>
+										<p class="products__price">267,00</p>
+										<p class="products__value">грн. / шт.</p>
+									</div>
+									<button class="products__add-button header___red-button" type="button">Додати в кошик</button>
+								</div>
+								<div class="products__hidden">
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Країна вирообник</span>
+										<span class="products__hidden-value">Іспанія</span>
+									</div>
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Стиль</span>
+										<span class="products__hidden-value">Ар-деко</span>
+									</div>
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Тип поверхні</span>
+										<span class="products__hidden-value">Глянцева</span>
+									</div>
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Бренд</span>
+										<span class="products__hidden-value">Vidrepur</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="products__item">
+								<a href="#" class="products__img-block">
+									<img src="/img/product.png" alt="">
+								</a>
+								<div class="products__availability-block">
+									<a href="#" class="products__name">Мозаїка 31,5*31,5 Color Antislip Blanco 100A</a>
+									<p>
+										<span class="products__availability">Є в наявності</span>
+									</p>
+								</div>
+								<div class="products__ppice-block">
+									<div>
+										<p class="products__price">267,00</p>
+										<p class="products__value">грн. / шт.</p>
+									</div>
+									<button class="products__add-button header___red-button" type="button">Додати в кошик</button>
+								</div>
+								<div class="products__hidden">
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Країна вирообник</span>
+										<span class="products__hidden-value">Іспанія</span>
+									</div>
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Стиль</span>
+										<span class="products__hidden-value">Ар-деко</span>
+									</div>
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Тип поверхні</span>
+										<span class="products__hidden-value">Глянцева</span>
+									</div>
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Бренд</span>
+										<span class="products__hidden-value">Vidrepur</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="products__item">
+								<a href="#" class="products__img-block">
+									<img src="/img/product.png" alt="">
+								</a>
+								<div class="products__availability-block">
+									<a href="#" class="products__name">Мозаїка 31,5*31,5 Color Antislip Blanco 100A</a>
+									<p>
+										<span class="products__availability">Є в наявності</span>
+									</p>
+								</div>
+								<div class="products__ppice-block">
+									<div>
+										<p class="products__price">267,00</p>
+										<p class="products__value">грн. / шт.</p>
+									</div>
+									<button class="products__add-button header___red-button" type="button">Додати в кошик</button>
+								</div>
+								<div class="products__hidden">
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Країна вирообник</span>
+										<span class="products__hidden-value">Іспанія</span>
+									</div>
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Стиль</span>
+										<span class="products__hidden-value">Ар-деко</span>
+									</div>
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Тип поверхні</span>
+										<span class="products__hidden-value">Глянцева</span>
+									</div>
+									<div class="products__hidden-item">
+										<span class="products__hidden-key">Бренд</span>
+										<span class="products__hidden-value">Vidrepur</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- products -->
+
+
+				<div class="pagination">
+
+					<a href="#" class="pagination__item pagination__item_active">1</a>
+					<a href="#" class="pagination__item">2</a>
+					<a href="#" class="pagination__item">3</a>
+					<a href="#" class="pagination__item pagination__item_disable">...</a>
+					<a href="#" class="pagination__item">15</a>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<footer class="footer">
+		<div class="subscribe-block">
+			<div class="container">
+				<div class="row subscribe-block-row">
+					<div class="col-md-5">
+						<p class="subscribe-block__text">ПІДПИСАТИСЯ НА КОРИСНІ ПІДКАЗКИ</p>
+					</div>
+					<div class="col-md-5 col-md-offset-2">
+						<form action="" class="subscribe-block__form">
+							<input type="email" placeholder="Вкажіть свій E-mail" class="subscribe-block__input">
+							<button type="submit" class="subscribe-block__button">підписатися</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-block container">
+			<div class="row">
+				<div class="col-md-3 footer-block__social">
+					<a href="" class="header__middle-logo">
+						<img src="/img/logo.png" alt="" class="header__middle-logo-img">
+						<div>
+							<p class="header__middle-logo-text">Кафельтон</p>
+							<p class="header__middle-logo-slogan">мозаїка з будь чого...</p>
+						</div>
+					</a>
+					<p class="footer-block__social-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+
+					<div class="footer-block__social-icons">
+						<a href="">
+							<img src="/img/facebook.png" alt="">
+						</a>
+						<a href="">
+							<img src="/img/instagram.png" alt="">
+						</a>
+						<a href="">
+							<img src="/img/youtube.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 footer-block__information">
+					<p class="footer-block__information-text">ІНФОРМАЦІЯ</p>
+					<ul class="footer-block__information-menu">
+						<li class="footer-block__information-menu-item">
+							<a href="/">Про нас</a>
+						</li>
+						<li class="footer-block__information-menu-item">
+							<a href="/">Оплата і доставка</a>
+						</li>
+						<li class="footer-block__information-menu-item">
+							<a href="/">Відгуки</a>
+						</li>
+						<li class="footer-block__information-menu-item">
+							<a href="/">FAQ</a>
+						</li>
+						<li class="footer-block__information-menu-item">
+							<a href="/">Контакти</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<p class="footer-block__information-text">КАТАЛОГ</p>
+					<ul class="footer-block__information-menu">
+						<li class="footer-block__information-menu-item">
+							<a href="/">Склянна мозаїка</a>
+						</li>
+						<li class="footer-block__information-menu-item">
+							<a href="/">Мозаїка з каменю</a>
+						</li>
+						<li class="footer-block__information-menu-item">
+							<a href="/">Зеркальна мозаїка</a>
+						</li>
+						<li class="footer-block__information-menu-item">
+							<a href="/">Металева мозаїка</a>
+						</li>
+						<li class="footer-block__information-menu-item">
+							<a href="/">Супутні товари</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3 footer-block__contacts">
+					<p class="footer-block__information-text">КОНТАКТИ</p>
+					<p class="footer-block__contacts-link">
+						<a href="tel:+380980677888">+38 098 06 77 888</a>
+					</p>
+					<p class="footer-block__contacts-link">
+						<a href="tel:+380980677888">+38 098 06 77 888 (Viber)</a>
+					</p>
+					<p class="footer-block__contacts-link">
+						<a href="mailto:info@site.com">info@site.com</a>
+					</p>
+				</div>
+			</div>
+
+
+
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 footer-sub">
+					<p class="footer-sub-text">Розробка сайту -
+						<a href="/">Веб-студія IT4U</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+	<script src="js/libs.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	    crossorigin="anonymous"></script>
+	<script src="/js/common.js"></script>
+
+	<script src="/js/common.js"></script>
+
+</body>
+
+</html>
